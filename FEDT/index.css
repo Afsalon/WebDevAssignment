@@ -1,0 +1,246 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&display=swap');
+
+@font-face {
+    font-family: 'Metropolis';
+    src: url('metropolis/Metropolis-Regular.otf') format('opentype');
+}
+
+@font-face {
+    font-family: 'Metropolis-light';
+    src: url('metropolis/Metropolis-Light.otf') format('opentype');
+}
+
+html {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: 62.5%;
+}
+
+:root {
+    --tile-green: #007F61;
+    --tile-green-transparent: rgba(0, 128, 98, 0.1);
+    --light-grey: #C8C8C8;
+    --underline-blue: #1877F2;
+}
+
+.cart-background {
+    width: 100vw;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.cart-body {
+    width: 34.073rem;
+    text-align: center;
+}
+
+.cart-title-division {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.cart-title {
+    font-size: 1.808rem;
+    line-height: 1.808rem;
+    color: var(--tile-green);
+    font-family: 'Metropolis', sans-serif;
+    font-weight: 500;
+}
+
+.line {
+    width: 9.4rem;
+    border-bottom: 0.9px solid var(--light-grey);
+}
+
+.cart-1,
+.cart-2,
+.cart-3 {
+    border: 0.9px solid var(--tile-green);
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.cart-1-onselect {
+    background-color: var(--tile-green-transparent);
+    border-width: 1px;
+}
+
+.cart-1-left {
+    width: 15%;
+    align-items: center;
+}
+
+.cart-1-right {
+    width: 80%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+
+.cart-1-description,
+.cart-1-off,
+.cart-2-off {
+    text-align: left;
+    font-family: 'Metropolis', sans-serif;
+    font-weight: 500;
+    font-size: 1.446rem;
+}
+
+.add {
+    font-family: 'Metropolis-light', sans-serif;
+    font-weight: 400;
+}
+
+.popular {
+    color: var(--tile-green);
+    text-align: right;
+    font-size: 1.26rem;
+    font-weight: 600;
+    font-family: 'Inter', sans-serif;
+}
+
+.cart-2-off {
+    text-align: right;
+}
+
+.special {
+    color: var(--light-grey);
+    text-decoration: line-through;
+    text-decoration-color: var(--light-grey);
+    font-family: 'Inter', sans-serif;
+    font-size: 0.994rem;
+    position: relative;
+    left: 3.6rem;
+}
+
+.cart-4 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-family: 'Inter', sans-serif;
+}
+
+.cart-4-left {
+    color: var(--tile-green);
+    font-size: 1.4rem;
+    line-height: 1.694rem;
+    font-weight: 400;
+    text-decoration: none;
+    position: relative;
+}
+
+.cart-4-left::before {
+    content: '';
+    position: absolute;
+    bottom: 3px;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background-color: transparent;
+    z-index: -1;
+    transition: background-color 0.3s ease;
+}
+
+.cart-4-left:hover::before {
+    background-color: var(--underline-blue);
+}
+
+.cart-4-right {
+    font-size: 1.4rem;
+    line-height: 1.694rem;
+    font-weight: 500;
+}
+
+#total {
+    font-weight: 400;
+}
+
+.submit-button {
+    color: white;
+    background-color: var(--tile-green);
+    text-align: center;
+    width: 100%;
+    border: 0.1px solid var(--tile-green);
+    font-family: 'Inter', sans-serif;
+    font-weight: 600;
+    border-top-right-radius: 4px;
+    border-top-left-radius: 4px;
+    border-bottom-right-radius: 4px;
+    min-height: 4.8rem;
+    cursor: pointer;
+}
+
+.sponser {
+    font-family: 'Inter', sans-serif;
+    font-weight: 300;
+    font-size: 1.2rem;
+    font-style: italic;
+    text-align: right;
+}
+
+.cart-2,
+.cart-3,
+.cart-4,
+.submit-button,
+.sponser {
+    margin-top: 2rem;
+}
+
+.cart-1,
+.cart-2,
+.cart-3 {
+    padding-bottom: 0.7rem;
+    border-radius: 0.362rem;
+    cursor: pointer;
+}
+
+
+
+.table-specifics-1,
+.table-specifics-2,
+.table-specifics-3 {
+    display: none;
+}
+
+.click-style {
+    background-color: var(--tile-green-transparent);
+    border: 2px solid var(--tile-green);
+}
+
+.specifics-head {
+    font-size: 0.994rem;
+    font-family: 'Inter', sans-serif;
+    font-weight: 400;
+    line-height: 1.203rem;
+    text-align: left;
+}
+
+.sizeDropdown,
+.colorDropdown {
+    border: 0.9px solid #D9D9D9;
+    font-size: 1.085rem;
+    font-family: 'Inter', sans-serif;
+    line-height: 1.313rem;
+    width: 6.598rem;
+    min-height: 2.531rem;
+    margin: 0.3rem 0.2rem;
+}
+
+.number {
+    font-family: 'Inter', sans-serif;
+    font-weight: 400;
+    font-size: 0.904rem;
+    line-height: 1.094rem;
+}
+
+@media screen and (max-width: 500px) {
+    .special {
+        left: 2rem;
+    }
+}
